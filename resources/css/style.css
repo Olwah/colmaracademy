@@ -1,0 +1,61 @@
+/** UNIVERSAL STYLES **/
+
+html {
+  font-family: helvetica;
+  font-size: 16px;
+}
+
+/** GENERAL STYLES **/
+
+.flex-container {
+  display: flex;
+}
+
+/** FONT STYLES **/
+
+/** HEADER & NAV STYLES **/
+
+header {
+  width: 100%;
+  height: 4rem;
+}
+
+#logo {
+  width: 50%;
+  padding-left: 1.5rem;
+}
+
+#logo img {
+  height: 2rem;
+  width: auto;
+}
+
+#colmar {
+  font-weight: bold;
+  color: darkgrey;
+}
+
+#academy {
+  color: lightgrey;
+}
+
+#logo, nav li {
+  display: inline-flex;
+  align-items: center;
+}
+
+nav {
+  width: 50%;
+  height: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  padding-right: 1rem;
+}
+
+nav li:last-child {
+  padding-right: 1.5rem;
+}
