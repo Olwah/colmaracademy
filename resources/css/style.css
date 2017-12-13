@@ -13,6 +13,19 @@ html {
 
 /** FONT STYLES **/
 
+h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding-bottom: 2rem;
+}
+
 /** HEADER & NAV STYLES **/
 
 header {
@@ -58,4 +71,31 @@ nav li {
 
 nav li:last-child {
   padding-right: 1.5rem;
+}
+
+/** SECTION STYLES **/
+
+#banner {
+  width: 100%;
+  background-color: lightgrey;
+  display: flex;
+}
+
+#banner img {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+#banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.button {
+  padding: 0.5rem 10rem;
+  margin: 2rem 0;
+  background-color: darkgrey;
+  color: white;
 }
