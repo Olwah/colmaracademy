@@ -1,18 +1,34 @@
 /** UNIVERSAL STYLES **/
 
 html {
-  font-family: helvetica;
+  font-family: 'Questrial', sans-serif;
   font-size: 16px;
+  background-color: lightgrey;
 }
 
 html, body {
   margin: 0;
 }
 
+/**
+
+COLOUR PALETTE
+
+Primary: #753394
+Secondary: #316D8E
+Tertiary: #DF9946
+Quaternary: #DADE45
+
+**/
+
 /** GENERAL STYLES **/
 
 
 /** FONT STYLES **/
+
+font-family: 'Varela Round', sans-serif;
+font-family: 'Questrial', sans-serif;
+font-family: 'Rubik', sans-serif;
 
 p {
   font-size: 1rem;
@@ -20,10 +36,11 @@ p {
 }
 
 a {
-  color: blue;
+  color: darkgrey;
 }
 
 h1 {
+  font-family: 'Rubik', sans-serif;
   font-size: 3rem;
   line-height: 1;
   font-weight: bold;
@@ -81,6 +98,7 @@ header {
 
 #nav-flex-container {
   display: flex;
+  background-color: #A061BE;
 }
 
 nav {
@@ -103,12 +121,13 @@ nav li:last-child {
 
 #banner {
   width: 100%;
-  background-color: lightgrey;
+  background-color: #8FBCD4;
   display: flex;
 }
 
 #banner img {
   width: 60%;
+  height: auto;
   padding: 2rem 1.5rem;
 }
 
@@ -123,9 +142,10 @@ nav li:last-child {
   width: 50%;
   padding: 0.5rem 3rem;
   margin: 2rem 0;
-  background-color: darkgrey;
-  color: white;
+  background-color: #FFC37C;
+  color: black;
   text-align: center;
+  font-weight: bold;
 }
 
 /** MAIN CONTENT STYLES **/
@@ -213,7 +233,7 @@ nav li:last-child {
   height: auto;
   display: inline-block;
   float: left;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 #thesis video {
@@ -265,8 +285,20 @@ aside {
   padding-bottom: 1rem;
 }
 
-.background {
-  background-color: darkgrey;
+.primary-background {
+  background-color: #A061BE;
+}
+
+.secondary-background {
+  background-color: #8FBCD4;
+}
+
+.tertiary-background {
+  background-color: #FFC37C;
+}
+
+.neutral-background {
+  background-color: lightgrey;
 }
 
 #thesis-aside {
@@ -276,19 +308,20 @@ aside {
 /** FOOTER STYLES **/
 
 footer {
-  width: 97%;
+  width: 96%;
   height: 3rem;
   display: block;
   position: relative;
   float: left;
   bottom: 0;
+  padding: 1rem 1.5rem;
   margin-top: 1rem;
-  margin-left: 1.5rem;
 }
 
 #copyright {
   display: inline-block;
   float: left;
+  color: white;
 }
 
 #privacy {
