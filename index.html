@@ -19,11 +19,19 @@
           <p><span id="colmar">Colmar</span><span id="academy">Academy</span></p>
         </div>
         <nav>
-          <ul>
+          <!-- DESKTOP NAV -->
+          <ul class="desktop">
             <li><a href="#">On Campus</a></li>
             <li><a href="#">Online</a></li>
             <li><a href="#">For Companies</a></li>
             <li><a href="#">Sign in</a></li>
+          </ul>
+          <!-- MOBILE NAV -->
+          <ul class="mobile">
+            <li><a href="#"><img src="/Users/olistuart/Documents/Projects/Colmar Academy/resources/images/ic-logo.svg" alt="Colmar Academy Logo"></a></li>
+            <li><a href="#"><img src="/Users/olistuart/Documents/Projects/Colmar Academy/resources/images/ic-on-campus.svg" alt="On Campus"></a></li>
+            <li><a href="#"><img src="/Users/olistuart/Documents/Projects/Colmar Academy/resources/images/ic-online.svg" alt="Online"></a></li>
+            <li><a href="#"><img src="/Users/olistuart/Documents/Projects/Colmar Academy/resources/images/ic-login.svg" alt="Sign In"></a></li>
           </ul>
         </nav>
       </div>
@@ -46,9 +54,10 @@
         <h6>Emmanuel, Sr Strategist at Hiring.com</h6>
       </section>
       <!-- ADDITIONAL CONTENT - RIGHT HAND ARTICLES -->
-      <aside class="">
+      <aside>
         <div class="info-snippet">
-          <img src="/Users/olistuart/Documents/Projects/Colmar Academy/resources/images/information-orientation.jpg" alt="Student orientation">
+          <img id="orientation" src="/Users/olistuart/Documents/Projects/Colmar Academy/resources/images/information-orientation.jpg" alt="Student orientation">
+          <img id="orientation-mobile" src="/Users/olistuart/Documents/Projects/Colmar Academy/resources/images/information-orientation-mobile.jpg" alt="Student orientation">
           <div class="info-text">
             <h3>Orientation date</h3>
             <p>Tues 10/11 & Weds 10/12: 8am - 3pm</p>
@@ -56,7 +65,8 @@
           </div>
         </div>
         <div class="info-snippet">
-          <img src="/Users/olistuart/Documents/Projects/Colmar Academy/resources/images/information-campus.jpg" alt="Colmar Academy campus">
+          <img id="campus" src="/Users/olistuart/Documents/Projects/Colmar Academy/resources/images/information-campus.jpg" alt="Colmar Academy campus">
+          <img id="campus-mobile" src="/Users/olistuart/Documents/Projects/Colmar Academy/resources/images/information-campus-mobile.jpg" alt="Colmar Academy campus">
           <div class="info-text">
             <h3>Our Campus</h3>
             <p>Find which campus is close by you</p>
@@ -64,7 +74,8 @@
           </div>
         </div>
         <div class="info-snippet tertiary-background">
-          <img src="/Users/olistuart/Documents/Projects/Colmar Academy/resources/images/information-guest-lecture.jpg" alt="Guest lecturer - Oliver Sack">
+          <img id="guest" src="/Users/olistuart/Documents/Projects/Colmar Academy/resources/images/information-guest-lecture.jpg" alt="Guest lecturer - Oliver Sack">
+          <img id="guest-mobile" src="/Users/olistuart/Documents/Projects/Colmar Academy/resources/images/information-guest-lecture-mobile.jpg" alt="Guest lecturer - Oliver Sack">
           <div class="info-text">
             <h3>Our Guest Lecture</h3>
             <p>Join a keynote with Oliver Sack about music in medical treatment</p>
@@ -73,7 +84,7 @@
         </div>
       </aside>
       <!-- MAIN CONTENT - COURSES -->
-      <section>
+      <section id="courses-desktop">
         <div class="courses-flex-container secondary-background">
           <h2 class="main-titles">Start learning</h2>
           <div class="courses">
@@ -126,6 +137,17 @@
           </div>
         </div>
       </section>
+      <!-- MAIN CONTENT - COURSES MOBILE -->
+      <section id="courses-mobile">
+        <ul>
+          <li><a href="#">Software engineering</li></a>
+          <li><a href="#">Computer art</li></a>
+          <li><a href="#">Design</li></a>
+          <li><a href="#">Data</li></a>
+          <li><a href="#">Business</li></a>
+          <li><a href="#">Marketing</li></a>
+        </ul>
+      </section>
       <!-- MAIN CONTENT - THESIS EXHIBIT -->
       <section id="thesis-exhibit" class="">
         <h2 class="main-titles">Thesis exhibit</h2>
@@ -134,6 +156,9 @@
           </video>
           <h3>Reimagine urban</h3>
           <p>Curabitur aliquam diam quis tempus condimentum. Pellentesque dignissim accumsan purus. Duis porta sapien at nisl porttitor, a accumsan mauris egestas. Pellentesque iaculis dui a hendrerit sodales. Integer a dui at urna congue gravida ut sit amet diam.</p>
+        </div>
+        <div>
+          <video id="thesis-mobile" src="/Users/olistuart/Documents/Projects/Colmar Academy/resources/videos/thesis.mp4" autoplay poster="" alt="Thesis exhibit video">  
         </div>
       </section>
       <!-- ADDITIONAL THESIS EXHIBIT ARTICLES -->
