@@ -109,7 +109,18 @@ nav li:last-child {
   display: none;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 620px) and (max-width: 775px) {
+  /** FOR SMALL SCREENS / TABLETS  **/
+  #logo {
+    width: 40%;
+  }
+
+  nav {
+    width: 68%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
   /** FOR MOBILE PHONES **/
   #logo, .desktop {
     display: none;
@@ -138,7 +149,7 @@ nav li:last-child {
 
 #banner img {
   width: 60%;
-  height: auto;
+  height: 60%;
   padding: 2rem 1.5rem;
 }
 
@@ -159,6 +170,71 @@ nav li:last-child {
   font-weight: bold;
 }
 
+.button:hover {
+  transition: color 10s ease-in 2s;
+  background-color: #A061BE;
+}
+
+@media only screen and (min-width: 733px) and (max-width: 920px) {
+  #banner-text h1 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  #banner-text h3 {
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 590px) and (max-width: 774px) {
+  #banner-text {
+    width: 60%;
+  }
+
+  #banner-text h1 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  #banner-text h3 {
+    padding-bottom: 0.5rem;
+  }
+
+  #banner img {
+    width: 40%;
+    height: 40%;
+  }
+
+  .button {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 590px) {
+  #banner-text {
+    width: 60%;
+  }
+
+  #banner-text h1 {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  #banner-text h3 {
+    padding-bottom: 0.5rem;
+    display: none;
+  }
+
+  #banner img {
+    width: 40%;
+    height: 40%;
+  }
+
+  .button {
+    margin: 0;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   /** FOR MOBILE PHONES **/
   #banner {
@@ -174,7 +250,7 @@ nav li:last-child {
 
   #banner-text {
     display: block;
-    width: 95%;
+    width: 93%;
     padding: 2rem 1rem;
   }
 
@@ -228,7 +304,7 @@ nav li:last-child {
 }
 
 .courses-flex-container {
-  width: 88.75%;
+  width: 93%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -268,6 +344,10 @@ nav li:last-child {
   padding-bottom: 1rem;
 }
 
+#courses-desktop {
+  width: 96%;
+}
+
 #courses-mobile {
   display: none;
 }
@@ -298,7 +378,30 @@ nav li:last-child {
   display: none;
 }
 
-@media only screen and (max-width: 480px) {
+
+
+@media only screen and (min-width: 733px) and (max-width: 960px) {
+    #main {
+      width: 50%;
+    }
+
+    #thesis {
+      width: 50%;
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 905px) {
+  .courses img {
+    display: none;
+  }
+
+  .courses-flex-container {
+    width: 96%;
+    padding: 2rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 760px) {
   /** FOR MOBILE PHONES **/
  #main {
     display: none;
@@ -423,68 +526,98 @@ aside {
   padding-top: 0;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 761px) and (max-width: 955px) {
+    aside {
+      width: 50%;
+    }
+
+    .info-snippet {
+      height: 10rem;
+    }
+
+    #thesis-aside {
+      width: 50%;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 761px) {
+  /** FOR SMALL SCREENS / TABLETS  **/
+  .info-text p {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 740px) {
   /** FOR MOBILE PHONES **/
-aside {
-  width: 100%;
-  float: none;
-  padding: 1.5rem 1rem 2rem 1rem;
+
+  aside {
+    width: 90%;
+    float: none;
+    padding: 1.5rem 1rem 2rem 1rem;
   }
 
-#orientation {
-  display: none;
+  #main {
+    display: none;
   }
 
-#orientation-mobile {
-  display: block;
-  margin-bottom: 1rem;
+  #orientation {
+    display: none;
   }
 
-#campus {
-  display: none;
+  #orientation-mobile {
+    display: block;
+    margin-bottom: 1rem;
   }
 
-#campus-mobile {
-  display: block;
-  margin-bottom: 1rem;
+  #campus {
+    display: none;
   }
 
-#guest {
-  display: none;
+  #campus-mobile {
+    display: block;
+    margin-bottom: 1rem;
   }
 
-#guest-mobile {
-  display: block;
-  margin-bottom: 1rem;
+  #guest {
+    display: none;
   }
 
-.info-snippet {
-  height: auto;
-  margin: 0;
-  background-color: lightgrey;
+  #guest-mobile {
+    display: block;
+    margin-bottom: 1rem;
   }
 
-.info-snippet img, .info-text {
-  display: block;
-  width: 100%;
-  padding: 0;
+  .info-snippet {
+    height: auto;
+    margin: 0;
+    background-color: lightgrey;
   }
 
-.info-text {
-  padding: 0 1.5rem;
-  margin-top: 1.5rem;
+  .info-snippet img, .info-text {
+    display: block;
+    width: 100%;
+    padding: 0;
   }
 
-#thesis-aside {
-  display: none;
+  .info-text {
+    padding: 0 1.5rem;
+    margin-top: 1.5rem;
   }
+
+  #thesis-aside {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 785px) {
 
 }
 
 /** FOOTER STYLES **/
 
 footer {
-  width: 90%;
+  width: 95%;
   height: 3rem;
   display: block;
   position: relative;
